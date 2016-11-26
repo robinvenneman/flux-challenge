@@ -1,0 +1,26 @@
+{
+  "name": "flux-challenge-robinvenneman-flux",
+  "version": "1.0.0",
+  "description": "Solving the flux challenge, with flux",
+  "author": "Robin Venneman",
+  "license": "MIT",
+  "repository": "github:robinvenneman/flux-challenge#flux",
+  "scripts": {
+    "build": "browserify src/app.js -t [ babelify --presets [ es2015 es2016 react ] ] -o dist/app.js",
+    "dev": "watchify src/app.js -t [ babelify --presets [ es2015 es2016 react ] ] -d -o dist/app.js"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-es2016": "^6.11.3",
+    "babel-preset-react": "^6.11.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "flux": "^2.1.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "whatwg-fetch": "^1.0.0"
+  }
+}
